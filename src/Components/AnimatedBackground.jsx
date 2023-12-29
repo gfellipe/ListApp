@@ -38,7 +38,7 @@ const AnimatedBackground = () => {
           style={{
             width: "10rem",
             height: "10rem",
-            background: "#a0ff52",
+            background: "#a9e974",
             borderRadius: "50%",
             display: "flex",
             justifyContent: "center",

@@ -125,6 +125,7 @@ export const Task = styled.div`
 
   ${CustomCheckbox} {
     margin-right: 10px;
+    color: #fff;
   }
 
   p {

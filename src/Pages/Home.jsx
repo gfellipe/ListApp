@@ -169,7 +169,7 @@ export const Home = () => {
                   <span>R$</span>
                   <PriceInput
                     type="text"
-                    value={task.price === 0 ? "" : task.price} // Ajustado aqui
+                    value={task.price === 0 ? "" : task.price} 
                     onChange={(e) => updatePrice(task.id, e.target.value)}
                     onFocus={(e) => {
                       if (e.target.value === "0") {
