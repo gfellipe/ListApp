@@ -19,7 +19,7 @@ const AnimatedBackground = () => {
       initial={{ opacity: 0, scale: 1.2 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 1.2 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1.5 }}
       style={{
         position: "fixed",
         top: 0,
