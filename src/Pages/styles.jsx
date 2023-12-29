@@ -10,7 +10,7 @@ const typeWriterAnimation = keyframes`
 `;
 
 export const Container = styled.div`
-  background: #a9e974;
+  background: #baf38b;
   padding: 20px;
   border-radius: 20px;
   max-height: 600px;
@@ -21,15 +21,15 @@ export const Container = styled.div`
   &::-webkit-scrollbar {
     width: 14px;
   }
-  
+
   &::-webkit-scrollbar-track {
-    background: #a9e974;
+    background: #baf38b;
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: #1d6627;
     border-radius: 50px;
-    border: 4px solid #a9e974;
+    border: 4px solid #baf38b;
   }
 
   &::-webkit-scrollbar-thumb:hover {
@@ -86,34 +86,6 @@ export const Form = styled.form`
   }
 `;
 
-
-export const CustomCheckbox = styled.input`
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #1d6627;
-  border-radius: 5px;
-  outline: none;
-  margin-right: 10px;
-  cursor: pointer;
-  position: relative;
-
-  &:checked {
-    background-color: #1d6627;
-    color: #fff;
-  }
-
-  &:checked::before {
-    content: "✔";
-    font-size: 14px;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-`;
-
 export const Task = styled.div`
   display: flex;
   align-items: center;
@@ -123,9 +95,9 @@ export const Task = styled.div`
   margin-top: 15px;
   padding: 0px 7px;
 
-  ${CustomCheckbox} {
+  input[type="checkbox"] {
     margin-right: 10px;
-    color: #fff;
+    cursor: pointer;
   }
 
   p {

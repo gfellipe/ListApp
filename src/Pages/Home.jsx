@@ -8,7 +8,6 @@ import {
   Container,
   AddButton,
   ClearButton,
-  CustomCheckbox,
   Task,
   TrashButton,
   QuantityBlock,
@@ -130,7 +129,7 @@ export const Home = () => {
               transition={{ duration: 0.5 }}
             >
               <Task completed={task.completed} key={task.id}>
-                <CustomCheckbox
+                <input
                   type="checkbox"
                   checked={task.completed}
                   onChange={() => toggleCompletion(task.id)}
@@ -179,7 +178,7 @@ export const Home = () => {
                   />
                 </PriceBlock>
 
-                <TrashButton onClick={() => removeTask(task.id)}>
+                <TrashButton style={{outline: 'none'}} onClick={() => removeTask(task.id)}>
                   <FaTrashAlt />
                 </TrashButton>
               </Task>
