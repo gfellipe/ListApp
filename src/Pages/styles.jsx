@@ -10,7 +10,7 @@ const typeWriterAnimation = keyframes`
 `;
 
 export const Container = styled.div`
-  background: #a0ff52;
+  background: #a9e974;
   padding: 20px;
   border-radius: 20px;
   max-height: 600px;
@@ -23,13 +23,13 @@ export const Container = styled.div`
   }
   
   &::-webkit-scrollbar-track {
-    background: #a0ff52;
+    background: #a9e974;
   }
 
   &::-webkit-scrollbar-thumb {
     background-color: #1d6627;
     border-radius: 50px;
-    border: 4px solid #a0ff52;
+    border: 4px solid #a9e974;
   }
 
   &::-webkit-scrollbar-thumb:hover {
@@ -100,6 +100,7 @@ export const CustomCheckbox = styled.input`
 
   &:checked {
     background-color: #1d6627;
+    color: #fff;
   }
 
   &:checked::before {
@@ -195,6 +196,7 @@ export const QuantityInput = styled.input`
   border: 1px solid #ccc;
   margin-right: 5px;
   padding: 5px;
+  outline: none;
 `;
 
 export const IncrementButton = styled.button`
@@ -239,6 +241,7 @@ export const PriceInput = styled.input`
   margin: 0 5px;
   padding: 5px;
   text-align: center;
+  outline: none;
 `;
 
 export const TrashButton = styled.button`
@@ -246,6 +249,7 @@ export const TrashButton = styled.button`
   border: none;
   cursor: pointer;
   font-size: 15px;
+  outline: none;
 `;
 
 export const Total = styled.div`

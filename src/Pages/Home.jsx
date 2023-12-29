@@ -88,7 +88,8 @@ export const Home = () => {
     localStorage.setItem("todoListTasks", JSON.stringify(updatedTasks));
   };
 
-  const clearAllTasks = () => {
+  const clearAllTasks = (e) => {
+    e.preventDefault();
     setTasks([]);
     localStorage.removeItem("todoListTasks");
   };
@@ -112,7 +113,7 @@ export const Home = () => {
 
         <ClearButton
           style={{ background: "#650d0d", color: "white" }}
-          onClick={clearAllTasks}
+          onClick={ (e) => clearAllTasks(e)}
         >
           Limpar items
         </ClearButton>
