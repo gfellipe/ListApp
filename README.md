@@ -35,6 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O List App é um aplicativo de lista de compras que simplifica a adição de itens. Além de inserir os itens, você pode especificar a quantidade e o valor individual. O total é calculado automaticamente à medida que você ajusta a quantidade.
+<a href="https://list-app-blush.vercel.app/">Demo</a>
 
 ## ⚙️ Funcionalidades
 
